@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta charset="utf-8"/>
+    <title> Amer </title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20px 1fr 4fr 20px;
+            grid-template-areas: 'header'
+                                 'menu'
+                                 'mainContene'
+                                 'footer'; 
+            }
+
+
+        div.header {
+            background-color: brown;  
+            grid-area: header;
+    
+        }
+        div.menu {
+            background-color: aqua;
+            grid-area: menu;
+        }
+        div.mainContene {
+            background-color: coral;
+            grid-area:  mainContene;
+
+        }
+        div.footer {
+            background-color: crimson;
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 600px) {
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20px 1fr 4fr 20px;
+            grid-template-areas: 'header'
+                                 'menu'
+                                 'mainContene'
+                                 'footer'; 
+            }
+
+
+        }
+        </style>
+
+</head>
+<body>
+    <div class="page">
+    <div class="header">header</div>
+    <div class="menu">menu</div>
+    <div class="mainContene">mainContene</div>
+    <div class="footer">footer</div>
+    </div>
+</body>
+</html>
